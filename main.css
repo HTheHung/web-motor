@@ -32,22 +32,22 @@
   
   .nav-items {
     float: left;
-    margin-left: 350px;
+    margin-left: 750px;
     margin-top: 10px;
   }
   
   /* Responsive web(Web thích nghi) */
   @media screen and (max-width: 500px) {
     .header a {
-      float: none;
+      float: right;
       display: block;
-      text-align: left;
+      text-align: center;
       font-size: 16px; 
       border-style: none;
     }
     
     .nav-items {
-      float: none;
+      float: right;
     }
 
   }
@@ -75,7 +75,7 @@
   
     /* search bar */
     .search input[type=text]{
-      width:300px;
+      width:200px;
       height:25px;
       border-radius:25px;
       border: none;
@@ -86,7 +86,7 @@
   .search{
       float:right;
       margin:7px;
-      margin-top: 30px;
+      margin-top: 22px;
   }
    
   .search button{
