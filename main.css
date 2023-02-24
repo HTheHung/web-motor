@@ -1,4 +1,4 @@
- * {         /* Phần của Ân   1 -51 */
+ * {         /* Phần của Ân   1 -59 */
     margin: 0;
     padding: 0;
 }
@@ -6,6 +6,13 @@
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 20px 10px;
+
+    /* Phần background-image */
+    background-image: url('png/background-header.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-position: center;
   }
   
   .header a {
@@ -51,3 +58,6 @@
     }
   }
 
+  .logo {
+    width: 10%;
+  }
