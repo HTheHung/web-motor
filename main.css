@@ -6,7 +6,6 @@
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 20px 10px;
-
     /* Phần background-image */
     background-image: url('png/background-header.jpg');
     background-size: 100%;
@@ -26,14 +25,15 @@
     
   }
   
-  
   .header a:hover {
     background-color: #000000;
     color: white;
   }
   
-  .header-right {
-    float: right;
+  .nav-items {
+    float: left;
+    margin-left: 350px;
+    margin-top: 10px;
   }
   
   /* Responsive web(Web thích nghi) */
@@ -42,28 +42,34 @@
       float: none;
       display: block;
       text-align: left;
+      font-size: 16px; 
+      border-style: none;
     }
     
-    .header-right {
+    .nav-items {
       float: none;
     }
+
   }
 
   /* Phần Logo by Ân*/
   .logo {
     width: 20%;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 10px;
   }
 
   /* Phần Menu by Ân*/
   .models {
-    border-right: 1px solid #fff;
+    border-right: 2px solid #fff;
   }
 
   .support {
-    border-right: 1px solid #fff;
+    border-right: 2px solid #fff;
   }
 
-  .active {
-    border-right: 1px solid #fff;
+  .home {
+    border-right: 2px solid #fff;
   }
   
