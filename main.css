@@ -302,3 +302,18 @@ footer .container .noi-dung.about p{
       width: 100%;
   }
 }
+
+/* Content by Hùng*/
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bar {
+  background-color: #333;
+  width: 100%;
+  height: 50px;
+}
+
+
