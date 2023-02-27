@@ -39,7 +39,69 @@
     </div>
 
     <!-- Phần Content -->
-    <div class="content"></div>
+    <div class="content">
+            <div id ="img1">
+                <img src="https://images.ctfassets.net/x7j9qwvpvr5s/6zHZhPjMUdm0W86FGUWeuP/b3d1c59dadec04599fb7751051432c8a/MY-22-XDVL-Nera-Model-Blocks-630x390.png" alt="diavel" width="372" height="264"></div>
+                <h1 style ="color:gray; font-size: 23px;"> XDivel V4</h1>
+                
+            <div id ="img2">
+                <img src="https://images.ctfassets.net/x7j9qwvpvr5s/4K2QRfm51YcNpaBCKeuKPB/e0f5c6e64c1dd2edbd00c4ac61d00d95/MY23-MotoE-Model-Blocks-630x390.png" alt="moto e" width="400" height="264"></div>
+                <h2 style ="color:gray; font-size: 23px;">Moto E</h2>
+               
+            <div id ="img3">
+                <img src=" https://images.ctfassets.net/x7j9qwvpvr5s/1I0X7WsbSyRKAcYvemUHqa/71e6c349a6d5ec7858c8a463b3abe0bb/MY23-Multistrada-V4-Rally-Radar-Gr-NEW-Model-Blocks-630x390.png" alt="Multistrada V4 Rally" width="400" height="260"></div>
+                <h3 style ="color:gray; font-size: 23px;">Multistrada V4 Rally</h3>
+                    
+            <div id="img4">
+                <img src="https://images.ctfassets.net/x7j9qwvpvr5s/55y3FhfNGxMKkTtkl0fszZ/6547c1ac827ccd42ac3c0a518e9faa5d/MY23-Streetfighter-V4-SP2-NEW-Model-Blocks-630x390.png" alt="Streetfighter V4" width="390" height="264"></div>
+                <h4 style ="color:gray; font-size: 23px">Streetfighter V4</h4>
+        
+            <div id="img5">
+                <img src = "https://images.ctfassets.net/x7j9qwvpvr5s/5xxvmj2DU3IiJHuTZoe9im/799f7a6d8a18389cedcfe2a61f7af6fb/MY23-Panigale-V4R-NEW-Model-Blocks-630x390.png" alt="Panigale V4 " width="390" height="264"></div>
+                <h5 style ="color:gray; font-size: 23px">Panigale V4</h5>
+        
+            <div id ="img6">
+                <img src ="https://images.ctfassets.net/x7j9qwvpvr5s/2JHvxdgyG9IiBSmrayfE5W/18e9f3a48c4ddb25ab9f37daaec22217/MY-22-SCR-Urban-Motard-Model-Blocks-630x390.png"alt=" Scrambler Icon" width="372" height="264"></div>
+                <h6 style ="color:gray; font-size: 23px;"> Scrambler Icon</h6>
+            </div>
+                <script>
+        
+                    if ('WebSocket' in window) {
+                        (function () {
+                            function refreshCSS() {
+                                var sheets = [].slice.call(document.getElementsByTagName("link"));
+                                var head = document.getElementsByTagName("head")[0];
+                                for (var i = 0; i < sheets.length; ++i) {
+                                    var elem = sheets[i];
+                                    var parent = elem.parentElement || head;
+                                    parent.removeChild(elem);
+                                    var rel = elem.rel;
+                                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                                    }
+                                    parent.appendChild(elem);
+                                }
+                            }
+                            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                            var address = protocol + window.location.host + window.location.pathname + '/ws';
+                            var socket = new WebSocket(address);
+                            socket.onmessage = function (msg) {
+                                if (msg.data == 'reload') window.location.reload();
+                                else if (msg.data == 'refreshcss') refreshCSS();
+                            };
+                            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                                console.log('Live reload enabled.');
+                                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                            }
+                        })();
+                    }
+                    else {
+                        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+                    }
+                   
+                </script>   
+    </div>
 
     <!-- Phần footer -->
     <footer>
