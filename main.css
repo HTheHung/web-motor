@@ -307,7 +307,7 @@ footer .container .noi-dung.about p{
 
 /* Content by Hùng*/
 .content {
-  display: flex;
+  display: fle
   flex-wrap: wrap;
   justify-content: space-between;
 }
