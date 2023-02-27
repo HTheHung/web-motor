@@ -7,7 +7,7 @@
     background-color: #f1f1f1;
     padding: 20px 10px;
     /* Phần background-image */
-    background-image: url('png/background-header.jpg');
+    background-image: url('/png/background-header-darkmode.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 350px;
@@ -303,4 +303,9 @@ footer .container .noi-dung.about p{
   footer .container, .noi-dung.about, .links, .contact{
       width: 100%;
   }
+}
+
+/* Content */
+.content .img {
+  margin: 1500px;
 }
