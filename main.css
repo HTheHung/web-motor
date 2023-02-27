@@ -7,15 +7,13 @@
     background-color: #f1f1f1;
     padding: 20px 10px;
     /* Phần background-image */
-    background-image: url('/png/background-header-darkmode.jpg');
+    background-image: url('/web-motor/png/background-header-darkmode.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 350px;
     background-position: center;
   }
-  image {
-    opacity: 0.5;
-  }
+  
   .header a {
     float: left;
     color: #fffcfc;
