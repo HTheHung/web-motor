@@ -13,10 +13,12 @@
     height: 350px;
     background-position: center;
   }
-  
+  image {
+    opacity: 0.5;
+  }
   .header a {
     float: left;
-    color: #fff;
+    color: #fffcfc;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -26,8 +28,10 @@
   }
   
   .header a:hover {
-    background-color: #000000;
-    color: white;
+    background-color: #767272;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(97, 93, 93);
+    border-radius: 5px;
   }
   
   .nav-items {
@@ -166,7 +170,7 @@ footer .container .noi-dung.about p{
   border-radius: 4px;
 }
 .social-icon li a:hover{
-  background: #f00;
+  background: rgb(120, 111, 111);
 }
 .social-icon li a .fa{
   color: #fff;
