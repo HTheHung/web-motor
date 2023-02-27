@@ -305,7 +305,13 @@ footer .container .noi-dung.about p{
   }
 }
 
-/* Content */
-.content .img {
-  margin: 1500px;
+/* Content by Hùng*/
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+
+
+
