@@ -1,6 +1,7 @@
  * {         /* Phần của Ân   1 -59 */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .header {
     overflow: hidden;
@@ -52,6 +53,10 @@
     
     .nav-items {
       float: right;
+    }
+
+    .img {
+      display: block;
     }
 
   }
@@ -309,8 +314,9 @@ footer .container .noi-dung.about p{
 .content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
 
 .bar {
   background-color: #333;
@@ -318,4 +324,11 @@ footer .container .noi-dung.about p{
   height: 50px;
 }
 
+.img{
+  max-width: 50%;
+  transition: all 0.3s ease-in-out;
+}
 
+.img:hover {
+  transform: scale(1.1);
+}
